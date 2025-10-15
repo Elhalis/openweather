@@ -46,6 +46,7 @@ class Weather extends Equatable {
   });
 
   factory Weather.fromJson(Map<String, dynamic> json) {
+    // reusable data access variables 
     final firstWeather = json['list'][0];
     final mainData = firstWeather['main'];
     final weatherData = firstWeather['weather'][0];
